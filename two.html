@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="two.css">
 </head>
-<body style="background-color: #BFCDFF; display: flex; overflow: hidden; width: 100%;">
+<body style="background-color: #BFCDFF; display: flex; width: 100%;">
 
     <!-- 카테고리 div -->
     <div style="background-color: white; width: 420px; height: 100%; position: fixed; top:0; left: 0; bottom: 0; float:left;">
@@ -16,7 +16,6 @@
             <img class="category_padding" src="icons/임시 로고.png" width="42" height="42" style="margin-right: 20px;">
             <p id="logo" style="font-size: 40px; margin-top: 0; margin-bottom: 0;">YOUPICK</p>
         </div>
-        
         <div id="category">
             <img src="icons/쿠킹.png" width="42" height="42">
             <p>쿠킹</p>
@@ -47,10 +46,9 @@
         </div>
     </div>
 
-    
     <div style="width: 100%">
-        <!-- topbar div  -->
-        <div id="topbar" style="margin-top:64px; float:right; margin-right: 92px;">
+        <!-- 로그인 div  -->
+        <div id="login">
             <img src="icons/검색.png" width="14" height="14" style="margin-top:10px; margin-right: 25px;"/>
             <p style="width:74px; height:25px; font-size: 20px; margin-top:0; margin-bottom:0; margin-right: 29px;">로그아웃</p>
             <img src="icons/일자로생긴선.png" width="2" height="33" />
@@ -75,10 +73,69 @@
         </div>
 
         <!-- 유튜버 설명 상자 div -->
-        <div style="background-color: #484848; height: 368px; border-radius: 16px;
-        margin-top: 16px; margin-left: 520px; margin-right: 100px;">
-            <div>
+        <div id="youtuberbox">
 
+            
+            <!-- 유튜버 사진, 해쉬태그, 하트 -->
+            <div style="margin-left: 20px; width:20%; justify-content: center;">
+                    <div id="youtuber">
+                        <div>
+                            <img src="icons/인기순.png" style="width:94px; height:94px; margin-top: 4px; "/>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <p id="youtuber_name">유튜버</p>
+                        <p id="youtuber_hashtag">먹방/스트리밍</p>
+                        <img style="width: 30px; height:26px; margin-top: 34px; margin-left: 14px;" src="icons/게시글_하트.png"/>
+                    </div>
+            </div>
+
+            <div style="width:80%">
+
+                <!-- 구독자수 누적조회수 최고조회수, 팬이된지, 먹방종합순위 -->
+                <div style="display:flex; text-align: center; margin-top: 70px; margin-left: 80px;">
+                    <!-- 구독자수 -->
+                    <div style="align-items: center; justify-content:center; margin-right: 62px;">
+                        <p class="youtuber_write">구독자 수</p>
+                        <p class="youtuber_write2">800K</p>
+                    </div>
+                    <!-- 누적조회수 -->
+                    <div style="align-items: center; justify-content:center; margin-right: 58px;">
+                        <p class="youtuber_write">누적 조회수</p>
+                        <p class="youtuber_write2">8m</p>
+                    </div>
+                    <!-- 최고조회수 -->
+                    <div style="align-items: center; justify-content:center;">
+                        <p class="youtuber_write">최고 조회수</p>
+                        <p class="youtuber_write2">2m</p>
+                    </div>
+
+
+                    <!-- 팬이 된지, 먹방 종합순위 -->
+                    <div style="display:flex; float:right; margin-left:auto;">
+                        <!-- 팬이 된지 -->
+                        <div style="align-items: center; justify-content:center;">
+                            <p class="youtuber_write3">팬이 된 지</p>
+                            <p class="youtuber_write4">13</p>
+                            <p class="youtuber_write3">일 째</p>
+                        </div>
+                        <p id="youtuber_writebar">|</p>
+                        <!-- 먹방 종합순위 -->
+                        <div style="align-items: center; justify-content:center; margin-left:30px; margin-right: 80px;">
+                            <p class="youtuber_write3">먹방 종합순위</p>
+                            <p class="youtuber_write4">28</p>
+                            <p class="youtuber_write3">th</p>
+                        </div>
+                    </div>
+            
+                </div>
+
+                <!-- 유튜버 한마디 -->
+                <div>
+                    <pre style="margin-top: 18px; margin-left: 90px; font-weight: 300; font-size: 24px; color:white;">안녕하세요! 먹방 유튜버 뫄뫄에요~
+매주 수요일 8시마다 새롭고 맛있는 메뉴로 찾아오니까 기대해주세요~</pre>
+                </div>
+            
             </div>
 
         </div>
@@ -88,16 +145,165 @@
         <p style="margin-top: 16px; margin-bottom:0px; margin-left:524px; font-size:40px;">뫄뫄구독자 게시판</p>
     
         <!-- 공지사항 상자 div -->
-        <div style="background-color: white; margin-top: 64px; height:235px;
-        margin-left: 519px; margin-right: 100px; border-radius: 16px;
-        text-align: center;">
-            <p>공지사항</p>
-            <p>다른 커뮤니티 이용자 분들에게 해가 되지 않도록 서로 예의를 지켜주세요~~</p>
+        <div id="announcement">
+            <div style="margin-bottom:0; display: flex; width: 100%; justify-content: center; align-items: center;">
+                <p style="font-size: 32px; width:99%; margin-bottom: 0px; margin-top: 60px;">🏝공지사항🏝</p>
+                <img src="icons/화살표.png" style="width:52px; height:52px; margin-top: 60px; float:right; margin-left:auto;"/>
+            </div>
+            <p style="font-size:28px; color: rgba(0, 0, 0, 0.5);;">다른 커뮤니티 이용자 분들에게 해가 되지 않도록 서로 예의를 지켜주세요~~</p>
         </div>
-    </div>
-    
 
-    
+        <!-- 검색관련 div -->
+        <div style="display: flex;"> 
+            <!-- 키워드 검색 div -->
+            <div id="search">
+                <p >키워드 검색</p>
+            </div>
+            <div id="searchtwo">
+                <img src="icons/검색.png" style="height:14px; width:14px; margin-bottom: 0px; margin-top:22px; margin-left:200px;"/>
+                <pre>#0510       #같이보러갈친구      #자기소개       #70만구독축하글</pre>
+            </div>
+            <!-- 인기순 -->
+            <div style="display:flex; width:20%; justify-content: right;">
+                <div id="popularity">
+                    <div>
+                        <img src="icons/인기순.png" style="width:20px; height:20px; margin-top: 4px;"/>
+                    </div>
+                </div>
+                <p style="margin-top: 56px; margin-left: 10px; margin-right: 84px; font-weight: 700;font-size: 22px; width:66px;">인기순</p>
+            </div>
+            <!-- 게시글 작성하기 -->
+            <div id="storywrite">
+                <p style="color:white; margin-top: 0px; margin-bottom:0px;">게시글 작성하기</p>
+            </div>
+            
+
+        </div>
+
+        <!-- 닉네임 게시글 날짜 div -->
+        <div style="margin-bottom: 200px;">
+
+            <!-- 게시글 위에 -->
+            <div style="display:flex; margin-left: 520px; font-weight: 500; font-size: 24px; color: rgba(0, 0, 0, 0.35);">
+                <div id="storyhide">
+                    <div>
+                        <p style="width:30px; height:30px; margin-top: 4px; "></p>
+                    </div>
+                </div>
+
+                <p style="margin-top: 48px; margin-left: 20px; margin-right: 84px; width:100px;">닉네임</p>
+                <p style=" margin-top: 48px; margin-left: 40px; width:58%;">게시글</p>
+                <p style="margin-top: 48px; width:20%;">날짜</p>
+
+                <div style="display:flex; float:right; margin-left: auto;">
+                    <p style="width:66px; height:66px; float:right; margin-right: 40px; margin-top:26px;"></p>
+                    <p style="width:17px; height:10px; margin-top: 54px;  margin-right: 135px;"></p>
+                </div>
+            </div>
+
+            <!-- 수평선 -->
+            <hr style=" margin-left: 520px; margin-right: 100px; margin-bottom: 0px;" color = "#000000" size="1px;">
+            <!-- 게시글 -->
+            <div style="display:flex; margin-left: 520px;">
+                <div id="story">
+                    <div>
+                        <img src="icons/인기순.png" style="width:30px; height:30px; margin-top: 4px; "/>
+                    </div>
+                </div>
+                <p style="margin-top: 42px; margin-left: 20px; margin-right: 84px; font-weight: 500;font-size: 24px; font-weight: 500; width:100px;">닉네임</p>
+                <p style="width:58%; font-weight: 500; font-size: 24px; margin-top: 42px; margin-left: 40px;">게시글 이름이마</p>
+                <p style="font-weight: 500; font-size: 20px; margin-top: 42px; width:20%;">2일전</p>
+                <div style="display:flex; float:right; margin-left: auto;">
+                    <img src="icons/게시글_프로필.png" style="width:66px; height:66px; float:right; margin-right: 40px; margin-top:26px;"/>
+                    <img src="icons/화살표2.png" style="width:17px; height:10px; margin-top: 54px;  margin-right: 135px;"/>
+                </div>
+            </div>
+
+            <!-- 수평선 -->
+            <hr style="margin-top: 20px; margin-left: 520px; margin-right: 100px; margin-bottom: 0px;" color = "#000000" size="1px;">
+            <!-- 게시글 -->
+            <div style="display:flex; margin-left: 520px;">
+                <div id="story">
+                    <div>
+                        <img src="icons/인기순.png" style="width:30px; height:30px; margin-top: 4px; "/>
+                    </div>
+                </div>
+                <p style="margin-top: 42px; margin-left: 20px; margin-right: 84px; font-weight: 500;font-size: 24px; font-weight: 500; width:100px;">닉네임</p>
+                <p style="width:58%; font-weight: 500; font-size: 24px; margin-top: 42px; margin-left: 40px;">게시글 이름이마</p>
+                <p style="font-weight: 500; font-size: 20px; margin-top: 42px; width:20%;">2일전</p>
+                <div style="display:flex; float:right; margin-left: auto;">
+                    <img src="icons/게시글_프로필.png" style="width:66px; height:66px; float:right; margin-right: 40px; margin-top:26px;"/>
+                    <img src="icons/화살표2.png" style="width:17px; height:10px; margin-top: 54px;  margin-right: 135px;"/>
+                </div>
+            </div>
+
+            <!-- 수평선 -->
+            <hr style="margin-top: 20px; margin-left: 520px; margin-right: 100px; margin-bottom: 0px;" color = "#000000" size="1px;">
+            <!-- 게시글 -->
+            <div style="display:flex; margin-left: 520px;">
+                <div id="story">
+                    <div>
+                        <img src="icons/인기순.png" style="width:30px; height:30px; margin-top: 4px; "/>
+                    </div>
+                </div>
+                <p style="margin-top: 42px; margin-left: 20px; margin-right: 84px; font-weight: 500;font-size: 24px; font-weight: 500; width:100px;">닉네임</p>
+                <p style="width:58%; font-weight: 500; font-size: 24px; margin-top: 42px; margin-left: 40px;">게시글 이름이마</p>
+                <p style="font-weight: 500; font-size: 20px; margin-top: 42px; width:20%;">2일전</p>
+                <div style="display:flex; float:right; margin-left: auto;">
+                    <img src="icons/게시글_프로필.png" style="width:66px; height:66px; float:right; margin-right: 40px; margin-top:26px;"/>
+                    <img src="icons/화살표2.png" style="width:17px; height:10px; margin-top: 54px;  margin-right: 135px;"/>
+                </div>
+            </div>
+
+            <!-- 수평선 -->
+            <hr style="margin-top: 20px; margin-left: 520px; margin-right: 100px; margin-bottom: 0px;" color = "#000000" size="1px;">
+            <!-- 게시글 -->
+            <div style="display:flex; margin-left: 520px;">
+                <div id="story">
+                    <div>
+                        <img src="icons/인기순.png" style="width:30px; height:30px; margin-top: 4px; "/>
+                    </div>
+                </div>
+                <p style="margin-top: 42px; margin-left: 20px; margin-right: 84px; font-weight: 500;font-size: 24px; font-weight: 500; width:100px;">닉네임</p>
+                <p style="width:58%; font-weight: 500; font-size: 24px; margin-top: 42px; margin-left: 40px;">게시글 이름이마</p>
+                <p style="font-weight: 500; font-size: 20px; margin-top: 42px; width:20%;">2일전</p>
+                <div style="display:flex; float:right; margin-left: auto;">
+                    <img src="icons/게시글_프로필.png" style="width:66px; height:66px; float:right; margin-right: 40px; margin-top:26px;"/>
+                    <img src="icons/화살표2.png" style="width:17px; height:10px; margin-top: 54px;  margin-right: 135px;"/>
+                </div>
+            </div>
+
+            <!-- 수평선 -->
+            <hr style="margin-top: 20px; margin-left: 520px; margin-right: 100px; margin-bottom: 0px;" color = "#000000" size="1px;">
+            <!-- 게시글 -->
+            <div style="display:flex; margin-left: 520px; margin-bottom: 28px;">
+                <div id="story">
+                    <div>
+                        <img src="icons/인기순.png" style="width:30px; height:30px; margin-top: 4px; "/>
+                    </div>
+                </div>
+                <p style="margin-top: 42px; margin-left: 20px; margin-right: 84px; font-weight: 500;font-size: 24px; font-weight: 500; width:100px;">닉네임</p>
+                <p style="width:58%; font-weight: 500; font-size: 24px; margin-top: 42px; margin-left: 40px;">게시글 이름이마</p>
+                <p style="font-weight: 500; font-size: 20px; margin-top: 42px; width:20%;">2일전</p>
+                <div style="display:flex; float:right; margin-left: auto;">
+                    <img src="icons/게시글_프로필.png" style="width:66px; height:66px; float:right; margin-right: 40px; margin-top:26px;"/>
+                    <img src="icons/화살표2.png" style="width:17px; height:10px; margin-top: 54px;  margin-right: 135px;"/>
+                </div>
+            </div>
+
+             <!-- 더보기 버튼 div -->
+            <div id="more">
+                <p style="margin-top:8px; font-weight: 700; font-size: 20px; color:#BEBEBE">더보기</p>
+            </div>
+
+        </div>
+
+       
+
+
+
+
+    </div>
     
 </body>
 </html>
