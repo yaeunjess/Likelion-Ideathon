@@ -1,0 +1,70 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+.notosans{
+    font-family: 'Noto Sans KR';
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.poppins{
+    font-family: SBAggroB;
+}
+
+*{
+    font-family: 'Noto Sans KR';
+}
+
+
+#category p{
+    font-size: 28px;
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+#category img{
+    margin-right: 70px;
+}
+#category{
+    display: flex;
+    margin-left: 64px;
+    margin-bottom: 48px;
+}
+
+#login{
+    display: flex;
+    margin-left: auto;
+    margin-top:64px; 
+    margin-right: 92px;
+
+    float:right; 
+}
+
+#storywrite{
+    display: flex;
+    
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-right: 100px;
+    background: #000000;
+    border-radius: 16px;
+}
+
+#popularity{
+    align-items: center; 
+    justify-content: center;
+    display: flex; 
+
+    background-color: white; 
+    width:40px;
+    height:40px; 
+    border-radius: 100%;
+    margin-top: 55px; 
+    margin-left:50px
+}

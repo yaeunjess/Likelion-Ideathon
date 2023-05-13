@@ -4,12 +4,272 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>우아톤 5팀 html page</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="two.css">
 </head>
-<body>
-    <h1>우아톤 5팀입니당!</h1>
-    <h2>안녕하세용</h2>
-    <h2>송혜주입니당!</h2>
-    <h1>5팀 황지훈입니다</h1>
+<body style="background: linear-gradient(to bottom, #BFCDFF, #e6ecfa); display: flex; width: 100%;">
+
+    <!-- 카테고리 div -->
+    <div style="background-color: white; width: 420px; height: 100%; position: fixed; top:0; left: 0; bottom: 0; float:left;">
+
+        <div id="category" style="margin-top:68px; margin-bottom:114px; margin-left: 64px;">
+            <img class="category_padding" src="icons/임시 로고.png" width="42" height="42" style="margin-right: 20px;">
+            <p id="logo" style="font-size: 40px; margin-top: 0; margin-bottom: 0;">YOUPICK</p>
+        </div>
+        <div id="category">
+            <img src="icons/쿠킹.png" width="42" height="42">
+            <p>쿠킹</p>
+        </div>
+        <div id="category">
+            <img src="icons/스포츠.png" width="42" height="42" style="margin-right: 70px;">
+            <p style="font-size: 28px; margin-top: 0; margin-bottom: 0;">스포츠</p>
+        </div>
+        <div id="category">
+            <img src="icons/독서.png" width="42" height="42">
+            <p>여행</p>
+        </div>
+        <div id="category">
+            <img src="icons/음악.png" width="42" height="42">
+            <p>음악</p>
+        </div>
+        <div id="category">
+            <img src="icons/춤.png" width="42" height="42">
+            <p>뷰티</p>
+        </div>
+        <div id="category">
+            <img src="icons/애니.png" width="42" height="42">
+            <p>유머</p>
+        </div>
+        <div id="category">
+            <img src="icons/기타.png" width="42" height="42">
+            <p>기타</p>
+        </div>
+    </div>
+
+    <!-- 카테고리 이외의 공간 div -->
+    <div style="width: 100%">
+        <!-- 로그인 div  -->
+        <div id="login">
+            <img src="icons/검색.png" width="14" height="14" style="margin-top:10px; margin-right: 25px;"/>
+            <p style="width:74px; height:25px; font-size: 20px; margin-top:0; margin-bottom:0; margin-right: 29px;">로그아웃</p>
+            <img src="icons/일자로생긴선.png" width="2" height="33" />
+            <p style="width:56px; height:25px; font-size: 20px; margin-top:0; margin-bottom:0; margin-left: 25px; margin-right:16px;">제시님</p>
+            <img src="icons/저장.png"  width="11" height="16" style="margin-top:10px;"/>
+        </div>
+
+        <!-- 해쉬태그 div -->
+        <div style="display: flex;"> 
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px;
+            margin-left: 420px; margin-top:184px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:20px;" >#홈트</p>
+            </div>
+            <div style="background-color: #686868; width:90px; height: 36px; border-radius: 32px;
+            margin-left: 10px; margin-top:184px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#피트니스</p>
+            </div>
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px;
+            margin-left: 10px; margin-top:184px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            </div>
+        </div>
+
+         <!-- 해쉬태그 밑에 div -->
+         <div style="display:flex;">
+            <!-- 최근 게시물 -->
+            <div style="background-color: #484848; width:20%; height: 550px; margin-left:420px;  margin-top:16px; border-radius: 16px;">
+                <!-- 글씨들 -->
+                <div style="display:flex;">
+                    <p style="color:white;  margin-top:38px; margin-bottom: 0px; margin-left:8%; font-weight: 700; font-size: 22px;">최근 올라온 게시물</p>
+                    <div style="background-color: #b7b7b7; margin-top: 38px; margin-left: auto; margin-right:44px; border-radius: 16px;width: 151px; height: 33px; text-align: center;">
+                        <p style="color:white; margin-top:2px; margin-bottom: 0px; font-weight: 700; font-size: 16px;">채널 바로가기</p>
+                    </div>
+                </div>
+                <!-- 영상 이미지 띄우기 -->
+                <img src="icons/유튜버사세_댓글사진.png" style="background-color: #d9d9d9;margin-top: 35px;  width:100%;" />
+                <!-- <div style="background-color: #d9d9d9;margin-top: 35px;  width:100%; height:280px;"></div> -->
+                <!-- 댓글 -->
+                <div>
+                    <p style="margin-left:7%; margin-top:12px; margin-bottom: 8px;color:white; font-weight: 700;font-size: 20px;">댓글</p>
+                </div>
+                <!-- 댓글 밑에 -->
+                <div style="display:flex;">
+                    <img style="margin-left:8%; margin-top:0px; margin-bottom: 0px;" src="icons/유뷰터상세_귀찮아서다운.png"/>
+                    <div style="margin-left:8%; border-radius: 26px; width: 76%; height: 23px; background-color: #d9d9d9;"></div>
+                </div>
+            </div>
+
+            <!-- 최근 랭킹 -->
+            <div style="background-color: #484848; width:20%; height: 550px; margin-left:20px; margin-top:16px; border-radius: 16px;">
+                <p style="color:white; margin-top:38px; margin-bottom: 6px; margin-left:8%; font-weight: 700; font-size: 22px;">최근 달성한 랭킹</p>
+                
+                <div style="display:flex; width:100%; justify-content: center; margin-top:60px;">
+                     <!-- 구독자 수 -->
+                    <div style="height: 170px; width:20%; text-align: center; margin-top:114px;">
+                        <div style="text-align: center; height: 170px; background-color: #828282; border-radius: 25px; ">
+                            <p style="font-weight: 700; font-size: 24px; margin-top:0px; margin-bottom: 0px;color:white; ">152K</p>
+                        </div>
+                        <p style="margin-top:20px; margin-bottom: 0px; color:white; font-weight: 700; font-size: 20px;">구독자 수</p>
+                    </div>
+                    <!-- 누적조회 수 -->
+                    <div style="margin-left:46px; height: 234px; width:20%; text-align: center;  margin-top:50px;" >
+                        <div style="text-align: center; height: 234px; background-color: #828282; border-radius: 25px; ">
+                            <p style="font-weight: 700; font-size: 24px; margin-top:0px; margin-bottom: 0px;color:white; ">4906m</p>
+                        </div>
+                        <p style="margin-top:20px; margin-bottom: 0px; color:white; font-weight: 700; font-size: 20px;">누적 조회수</p>
+                    </div>
+                    <!-- 클럽회원 수 -->
+                    <div style="margin-left:46px; height: 300px; width:20%; text-align: center;  margin-top:162px;">
+                        <div style="text-align: center; height: 122px;  background-color: #828282; border-radius: 25px; ">
+                            <p style="font-weight: 700; font-size: 24px; margin-top:0px; margin-bottom: 0px;color:white; ">5680</p>
+                        </div>
+                        <p style="margin-top:20px; margin-bottom: 0px; color:white; font-weight: 700; font-size: 20px;">클럽회원 수</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 유튜버 간단 요약 -->
+            <div style="background-color: #484848; width:20%; height: 550px; margin-left:20px; margin-top:16px; border-radius: 16px;">
+                <!-- 이미지랑 평균 평점 -->
+                <div style="display:flex; align-items: center; justify-content: center; margin-top:70px;">
+                    <img src="icons/운동유튜버_힙으뜸.jpg" style="width: 220px; height: 220px; border-radius: 100%; margin-right:5%;"/>
+                    <img src="icons/유튜버상세_평점막대기.png" style="height:100px; margin-top:70px;"/>
+                    <div style="text-align: center; margin-top:110px; margin-left:0px;">
+                        <p style="margin-top: 0px; margin-bottom: -12px; color:white;font-size: 14px;">평균 평점</p>
+                        <p style="margin-top: 0px; margin-bottom: 0px; color:white; font-weight: 700; font-size: 40px;">4.5</p>
+                    </div>
+                </div>
+                <!-- 유튜버 이름, 해쉬태그 -->
+                <div style="display:flex; align-items: center; margin-top: 26px;">
+                    <p style="margin-top:0px; margin-bottom: 0px; margin-left: 98px; color:white;font-weight: 700; font-size: 32px;">힙으뜸</p>
+                    <p style="margin-top:0px; margin-bottom: 0px; margin-left: 10px; color:white; font-weight: 500; font-size: 18px">피트니스/필라테스</p>
+                </div>
+                <pre style="margin-bottom:40px; margin-top: 12px; margin-left: 90px; font-weight: 300; font-size: 16px; color:white;">🥇국내 1위 여성 운동 크리에이터
+🥇국내 최초 100만 여성 운동 크리에이터</pre>
+                <!-- 검정 버튼  -->
+                <div style="display:flex; justify-content: center; ">
+                    <!-- 관심 저장하기 -->
+                    <div style="text-align: center; background-color: black; border-radius:16px; width: 151px; height: 48px;">
+                        <p style="color:white; margin-top:8px; margin-bottom:0px; ">관심 저장하기</p>
+                    </div>
+                    <!-- 구독자 커뮤니티 -->
+                    <div style="margin-left: 5%; text-align: center; background-color: black; border-radius:16px; width: 151px; height: 48px;">
+                        <p style="cursor: pointer; color:white; margin-top:8px; margin-bottom:0px; " onclick="location.href='http://localhost:5500/two.html';">구독자 커뮤니티</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- latest reviews -->
+        <p class="poppins" style="margin-bottom: 16px; margin-top: 184px; margin-left:524px;font-weight: 700; font-size:24px;">LATEST REVIEWS</p>
+        <!-- 유저들이 평가한 힙으뜸 -->
+        <div style="display: flex; align-items:center;">
+            <!-- 유저들이 평가한 힙으뜸 -->
+            <p style="margin-top: 0px; margin-bottom:0px; margin-left:524px; font-size:40px;">유저들이 평가한 힙으뜸</p>
+            <!-- 인기순, 리뷰 작성하기 -->
+            <div style="display:flex;  float:right; margin-left: auto;">
+                <!-- 인기순 -->
+                <div style="display:flex; align-items:center;">
+                    <img src="icons/유뷰터상세_귀찮아서다운.png" style="width:50px; height:50px; margin-top: 6px;"/>
+                    <P style="font-size: 22px; margin-top:0px; margin-bottom:0px; margin-left:4px;">인기순</P>
+                </div>
+                <!-- 리뷰 작성하기-->
+                <div id="storywrite" style="margin-top:6px; margin-left:100px; ">
+                    <p style="color:white; margin-top: 0px; margin-bottom:0px; font-weight:300;">리뷰 작성하기</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 리뷰 2개 div -->
+        <div style="display:flex; margin-bottom: 790px;">
+            <!-- 리뷰 1 -->
+            <div style="border-radius: 60px;  background-color: #737373;  align-items: center; justify-content: center;  width: 28%; height:fit-content; margin-left:540px; margin-top: 98px; margin-bottom:0px;">
+                
+                <!-- 검은 상자 -->
+                <div style="position: relative; z-index: 2; display:flex; align-items: center;  background-color: black; border-radius: 60px;height:140px;">
+                    <div style="display:flex; align-items: center; margin-left:8%">
+                        <div style="background-color: white; border-radius: 100%; width:96px; height: 96px;"></div>
+                        <p style="color:white; font-weight: 700; font-size: 30px; margin-left:20px;">헬린이님</p>
+                        <p style="color:white; font-weight: 300; font-size: 24px; margin-left:20px;">12분 전</p>
+                    </div>
+                    <div style="text-align: center; margin-left: auto; float:right; background-color: #484848; border-radius: 60px; width:20%; height:140px;">
+                        <p style="margin-top:48px; margin-bottom:0px; color:white; font-weight: 700; font-size: 30px;">5점</p>
+                    </div>
+                </div>
+
+                <!-- 댓글 제목, 리뷰 -->
+                <div style="position:relative; left:10%">
+                    <p style="margin-top:44px; font-weight:500; font-size: 36px; color:white; width:80%; margin-bottom: 0px;">요즘에 으뜸님의 스트레칭 영상으로 하루 일과를 시작하고 있습니당..🌟</p>
+                    <P style="margin-top:46px; font-weight:100; font-size: 32px; color:white; width:80%; margin-bottom: 0px;">아침,저녁,운동 전후로 으뜸님 스트레칭으로 하고 있는데, 몸도 개운하고 많이 유연해진 것 같아요!:)
+                        아침 스트레칭은 일어나자마자 하고 있는데 진짜로 정신도 맑아지고 굳었던 몸도 풀리고 무지 시원해요!!👍👍
+                        특히 일 갈때는 시간이 많지 않은데 시간도 적당하고 하루 일과를 시작할때 몸도 풀수 있어서 너무 좋은 것 같아요!!
+                        앞으로도 자주 으뜸님 영상 보면서 운동 많아 하겠습니당해 감사합니당!!🙂🙂</P>
+                </div>
+
+                <!-- 댓글 좋아요 -->
+                <div style="position:relative; left:10%; display:flex; width:80%; margin-top:76px;">
+                    <p style="margin-left:0px; margin-top:0px; margin-bottom: 8px;color:white; font-weight: 700;font-size: 26px;">댓글</p>
+                    <div style="display:flex; margin-left:auto; float:right;">
+                        <p style="margin-top:0px; margin-bottom:0px; color:white; font-size: 26px;  font-weight: 700;">좋아요</p>
+                        <img src="icons/유튜버상세_하트.png" style="margin-top:10px; margin-bottom:0px; margin-left: 6px; width: 26px; height: 22px;"/>
+                    </div>
+                </div>
+
+                <!-- 댓글 좋아요 밑에 -->
+                <div style="position:relative; left:11%; display:flex; margin-top:28px; width:80%; ">
+                    <img style="margin-top:0px; margin-bottom: 0px; width:30px; height:30px;" src="icons/유뷰터상세_귀찮아서다운.png"/>
+                    <div style="margin-top:4px; margin-left:auto; float:right; border-radius: 26px; width: 80%; height: 23px; background-color: #d9d9d9;"></div>
+                </div>
+
+                <!-- 댓글 사진 -->
+                <img src="icons/유튜버상세_댓글사진5.png" style="border-radius:0px 0px 60px 60px  ; width:100% ; margin-top:64px;"/>
+            </div>
+
+            <!-- 리뷰 2 -->
+            <div style="border-radius: 60px;  background-color: #737373;  align-items: center; justify-content: center;  width: 28%; height:fit-content; margin-left:3%; margin-top: 98px; margin-bottom:0px;">
+                
+                <!-- 검은 상자 -->
+                <div style="position: relative; z-index: 2; display:flex; align-items: center;  background-color: black; border-radius: 60px;height:140px;">
+                    <div style="display:flex; align-items: center; margin-left:8%">
+                        <div style="background-color: white; border-radius: 100%; width:96px; height: 96px;"></div>
+                        <p style="color:white; font-weight: 700; font-size: 30px; margin-left:20px;">내일부터 힙으뜸님</p>
+                        <p style="color:white; font-weight: 300; font-size: 24px; margin-left:20px;">1시간 전</p>
+                    </div>
+                    <div style="text-align: center; margin-left: auto; float:right; background-color: #484848; border-radius: 60px; width:20%; height:140px;">
+                        <p style="margin-top:48px; margin-bottom:0px; color:white; font-weight: 700; font-size: 30px;">4.3점</p>
+                    </div>
+                </div>
+
+                <!-- 댓글 제목, 리뷰 -->
+                <div style="position:relative; left:10%">
+                    <p style="margin-top:44px; font-weight:500; font-size: 36px; color:white; width:80%; margin-bottom: 0px;">요즘에 으뜸님의 스트레칭 영상으로 하루 일과를 시작하고 있습니당..🌟</p>
+                    <P style="margin-top:46px; font-weight:100; font-size: 32px; color:white; width:80%; margin-bottom: 0px;">이 영상 스트레칭 넘모 죠아요..몸이 가뿐해지는 느낌! 며칠전에 추천영상 떠서 우연히 보게 됐는데 그때부터 매일 아침에 해주고 있어요 항상 몸이 안풀리고 찌뿌둥한 상태로 하루를 시작했는데 다른 스트레칭 영상들보다 저한텐 훨씬 효과가 좋았어요!</P>
+                </div>
+
+                <!-- 댓글 좋아요 -->
+                <div style="position:relative; left:10%; display:flex; width:80%; margin-top:76px;">
+                    <p style="margin-left:0px; margin-top:0px; margin-bottom: 8px;color:white; font-weight: 700;font-size: 26px;">댓글</p>
+                    <div style="display:flex; margin-left:auto; float:right;">
+                        <p style="margin-top:0px; margin-bottom:0px; color:white; font-size: 26px;  font-weight: 700;">좋아요</p>
+                        <img src="icons/유튜버상세_하트.png" style="margin-top:10px; margin-bottom:0px; margin-left: 6px; width: 26px; height: 22px;"/>
+                    </div>
+                </div>
+
+                <!-- 댓글 좋아요 밑에 -->
+                <div style="position:relative; left:11%; display:flex; margin-top:28px; width:80%; ">
+                    <img style="margin-top:0px; margin-bottom: 0px; width:30px; height:30px;" src="icons/유뷰터상세_귀찮아서다운.png"/>
+                    <div style="margin-top:4px; margin-left:auto; float:right; border-radius: 26px; width: 80%; height: 23px; background-color: #d9d9d9;"></div>
+                </div>
+
+                <!-- 댓글 사진 -->
+                <img src="icons/유튜버상세_댓글사진4.png" style="border-radius:0px 0px 60px 60px  ; width:100% ; margin-top:64px;"/>
+            </div>
+            
+        </div>
+
+    </div>
+    
 </body>
 </html>
+
