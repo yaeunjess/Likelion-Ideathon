@@ -5,8 +5,322 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="three.css">
 </head>
-<body>
+<body style="background: linear-gradient(to bottom,  #BFCDFF, #e6ecfa); display: flex; width: 100%;">
+
+    <!-- 카테고리 div -->
+    <div style="background-color: white; width: 420px; height: 100%; position: fixed; top:0; left: 0; bottom: 0; float:left;">
+
+        <div id="category" style="margin-top:68px; margin-bottom:114px; margin-left: 64px;">
+            <img class="category_padding" src="icons/임시 로고.png" width="42" height="42" style="margin-right: 20px;">
+            <p id="logo" style="font-size: 40px; margin-top: 0; margin-bottom: 0;">YOUPICK</p>
+        </div>
+        <div id="category">
+            <img src="icons/쿠킹.png" width="42" height="42">
+            <p>쿠킹</p>
+        </div>
+        <div id="category">
+            <img src="icons/스포츠.png" width="42" height="42" style="margin-right: 70px;">
+            <p style="font-size: 28px; margin-top: 0; margin-bottom: 0;">스포츠</p>
+        </div>
+        <div id="category">
+            <img src="icons/독서.png" width="42" height="42">
+            <p>여행</p>
+        </div>
+        <div id="category">
+            <img src="icons/음악.png" width="42" height="42">
+            <p>음악</p>
+        </div>
+        <div id="category">
+            <img src="icons/춤.png" width="42" height="42">
+            <p>뷰티</p>
+        </div>
+        <div id="category">
+            <img src="icons/애니.png" width="42" height="42">
+            <p>유머</p>
+        </div>
+        <div id="category">
+            <img src="icons/기타.png" width="42" height="42">
+            <p>기타</p>
+        </div>
+    </div>
+
+    <!-- 카테고리 이외의 공간 div -->
+    <div style="width: 100%">
+        <!-- 로그인 div  -->
+        <div id="login">
+            <img src="icons/검색.png" width="14" height="14" style="margin-top:10px; margin-right: 25px;"/>
+            <p style="width:74px; height:25px; font-size: 20px; margin-top:0; margin-bottom:0; margin-right: 29px;">로그아웃</p>
+            <img src="icons/일자로생긴선.png" width="2" height="33" />
+            <p style="width:56px; height:25px; font-size: 20px; margin-top:0; margin-bottom:0; margin-left: 25px; margin-right:16px;">제시님</p>
+            <img src="icons/저장.png"  width="11" height="16" style="margin-top:10px;"/>
+        </div>
+
+
+        <!-- liked youtubers -->
+        <p class="poppins" style="margin-bottom: 16px; margin-top: 184px; margin-left:524px; font-size:24px;">LIKED YOUTUBERS</p>
+        
+        <!-- 내가 관심있는 유튜버, 리스트 수정하기 -->
+        <div style="display: flex; align-items:center;">
+            <!-- 내가 관심있는 유튜버 -->
+            <p style="margin-top: 0px; margin-bottom:0px; margin-left:524px; font-size:40px;">내가 관심있는 유튜버</p>
+            <!-- 리스트 수정하기 -->
+            <div id="storywrite">
+                <p style="color:white; margin-top: 0px; margin-bottom:0px; font-weight:300;">리스트 수정하기</p>
+            </div>
+        </div>
+
+
+
+        
+        <!-- 카테고리 -->
+        <div style="margin-left:524px; display:flex; margin-top:70px;">
+            <!-- 쿠킹 -->
+            <div id="category2">
+                <p>쿠킹</p>
+            </div>
+            <!-- 하트 -->
+            <div style="margin-left: 10px; margin-top:6px;">
+                <img style="height:18px; width:22px; margin-left:2px;" src="icons/유튜버_하트.png"/>
+                <p style="margin-top:0px; margin-bottom:0px; font-weight: 500; font-size: 12px;">250K</p>
+            </div>
+        </div>
+
+        <!-- 해쉬태그 div -->
+        <div style="display: flex;"> 
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px;
+            margin-left: 524px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#레시피</p>
+            </div>
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px;
+            margin-left: 10px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#브런치</p>
+            </div>
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px;
+            margin-left: 10px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:18px;">#요리</p>
+            </div>
+        </div>
+
+        <!-- 쿠킹 유튜버 -->
+        <div style="display:flex; margin-left:524px; margin-top:16px; align-items: center;">
+            
+            <!-- 유튜버1 -->
+            <div class="youtuber">
+                <img style="margin-top:32px;  width:200px; height:200px; border-radius: 100%;" src="icons/쿠킹유튜버_NellMoRecipe 넬모레시피.jpg"/>
+                <!-- 유튜버 이름, 해쉬태크 -->
+                <div style="margin-top: 8px; display:flex; align-items:center; justify-content: center;">
+                    <p style="margin-top:0px; margin-bottom:0px; color:white; font-size:24px; font-weight:500">넬모레시피</p>
+                    <p style="margin-left:6px; margin-top:0px; margin-bottom:0px; color: white; font-size:16px; font-weight:100">요리/레시피</p>
+                </div>
+                <!-- 유튜버 한줄 소개 -->
+                <pre style="margin-top:26px; margin-bottom:0px; color:white; font-weight:100; font-size:12px;">
+                </pre>
+                <!-- 구독자수, 하트수 -->
+                <div style="display:flex; margin-top: 26px; align-items: center; justify-content: center;">
+                    <div style="display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_사람.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">2.1K</p>
+                    </div>
+                    <div style="margin-left: 18px; display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_하얀색하트.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">4K</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 유튜버2 -->
+            <div class="youtuber" style="margin-left:40px;">
+                <img style="margin-top:32px;  width:200px; height:200px; border-radius: 100%;" src="icons/쿠킹유튜버_나니까 Nannika.jpg"/>
+                <!-- 유튜버 이름, 해쉬태크 -->
+                <div style="margin-top: 8px; display:flex; align-items:center; justify-content: center;">
+                    <p style="margin-top:0px; margin-bottom:0px; color:white; font-size:24px; font-weight:500">나니까</p>
+                    <p style="margin-left:6px; margin-top:0px; margin-bottom:0px; color: white; font-size:16px; font-weight:100">요리/레시피</p>
+                </div>
+                <!-- 유튜버 한줄 소개 -->
+                <pre style="margin-top:26px; margin-bottom:0px; color:white; font-weight:100; font-size:12px;">🦋내가 나를 대접하는 시간🦋
+                </pre>
+                <!-- 구독자수, 하트수 -->
+                <div style="display:flex; margin-top: 26px; align-items: center; justify-content: center;">
+                    <div style="display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_사람.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">15.8K</p>
+                    </div>
+                    <div style="margin-left: 18px; display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_하얀색하트.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">12K</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 유튜버3 -->
+            <div class="youtuber" style="margin-left:40px;">
+                <img style="margin-top:32px;  width:200px; height:200px; border-radius: 100%;" src="icons/쿠킹유튜버_마법소년 김셰프.jpg"/>
+                <!-- 유튜버 이름, 해쉬태크 -->
+                <div style="margin-top: 8px; display:flex; align-items:center; justify-content: center;">
+                    <p style="margin-top:0px; margin-bottom:0px; color:white; font-size:24px; font-weight:500">마법소년 김셰프</p>
+                    <p style="margin-left:6px; margin-top:0px; margin-bottom:0px; color: white; font-size:16px; font-weight:100">레시피/요리방송</p>
+                </div>
+                <!-- 유튜버 한줄 소개 -->
+                <pre style="margin-top:26px; margin-bottom:0px; color:white; font-weight:100; font-size:12px;">매주 월9시 실시간 요리방송!
+                </pre>
+                <!-- 구독자수, 하트수 -->
+                <div style="display:flex; margin-top: 26px; align-items: center; justify-content: center;">
+                    <div style="display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_사람.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">9.7K</p>
+                    </div>
+                    <div style="margin-left: 18px; display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_하얀색하트.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">5.9K</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 유튜버4 -->
+            <div class="youtuber" style="margin-left:40px;">
+                <img style="margin-top:32px;  width:200px; height:200px; border-radius: 100%;" src="icons/쿠킹유튜버_천재소녀 KitchenStory.jpg"/>
+                <!-- 유튜버 이름, 해쉬태크 -->
+                <div style="margin-top: 8px; display:flex; align-items:center; justify-content: center;">
+                    <p style="margin-top:0px; margin-bottom:0px; color:white; font-size:24px; font-weight:500">천재소녀</p>
+                    <p style="margin-left:6px; margin-top:0px; margin-bottom:0px; color: white; font-size:16px; font-weight:100">브런치/카페메뉴</p>
+                </div>
+                <!-- 유튜버 한줄 소개 -->
+                <pre style="margin-top:26px; margin-bottom:0px; color:white; font-weight:100; font-size:12px;">따뜻한 집밥과 단정한 살림 맛있는
+브런치가 있는 천재소녀의 부엌이야기입니다</pre>
+                <!-- 구독자수, 하트수 -->
+                <div style="display:flex; margin-top: 26px; align-items: center; justify-content: center;">
+                    <div style="display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_사람.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">51.3K</p>
+                    </div>
+                    <div style="margin-left: 18px; display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_하얀색하트.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">52K</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 화살표 -->
+            <div style="width:16%; text-align: center;">
+                <img style="width:30px; height:48px;" src="icons/유튜버_화살표.png"/>
+            </div>
+            
+        </div>
+
+
+
+
+        <!-- 카테고리 -->
+        <div style="margin-left:524px; display:flex; margin-top:80px;">
+            <!-- 스포츠 -->
+            <div id="category2">
+                <p>스포츠</p>
+            </div>
+            <!-- 하트 -->
+            <div style="margin-left: 10px; margin-top:6px;">
+                <img style="height:18px; width:22px; margin-left:2px;" src="icons/유튜버_하트.png"/>
+                <p style="margin-top:0px; margin-bottom:0px; font-weight: 500; font-size: 12px;">352K</p>
+            </div>
+        </div>
+
+        <!-- 해쉬태그 div -->
+        <div style="display: flex;"> 
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px;
+            margin-left: 524px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:20px;" >#홈트</p>
+            </div>
+            <div style="background-color: #686868; width:88px; height: 36px; border-radius: 32px;
+            margin-left: 10px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:10px;" >#피트니스</p>
+            </div>
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px;
+            margin-left: 10px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            </div>
+        </div>
+
+        <!-- 스포츠 유튜버 -->
+        <div style="display:flex; margin-left:524px; margin-top:16px; align-items: center; margin-bottom:500px;">
+            
+            <!-- 유튜버1 -->
+            <div class="youtuber">
+                <img style="margin-top:32px;  width:200px; height:200px; border-radius: 100%;" src="icons/운동유튜버_소미핏 SOMIFIT.jpg"/>
+                <!-- 유튜버 이름, 해쉬태크 -->
+                <div style="margin-top: 8px; display:flex; align-items:center; justify-content: center;">
+                    <p style="margin-top:0px; margin-bottom:0px; color:white; font-size:24px; font-weight:500">소미핏</p>
+                    <p style="margin-left:6px; margin-top:0px; margin-bottom:0px; color: white; font-size:16px; font-weight:100">홈트/체형교정</p>
+                </div>
+                <!-- 유튜버 한줄 소개 -->
+                <pre style="margin-top:26px; margin-bottom:0px; color:white; font-weight:100; font-size:12px;">무료 운동 프로그램 서비스제공✅
+Be the best version of you! 💪🏽😉</pre>
+                <!-- 구독자수, 하트수 -->
+                <div style="display:flex; margin-top: 26px; align-items: center; justify-content: center;">
+                    <div style="display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_사람.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">99.6K</p>
+                    </div>
+                    <div style="margin-left: 18px; display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_하얀색하트.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">21K</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 유튜버2 -->
+            <div class="youtuber" style="margin-left:40px;">
+                <img style="margin-top:32px;  width:200px; height:200px; border-radius: 100%;" src="icons/운동유튜버_핏블리 FITVELY.jpg"/>
+                <!-- 유튜버 이름, 해쉬태크 -->
+                <div style="margin-top: 8px; display:flex; align-items:center; justify-content: center;">
+                    <p style="margin-top:0px; margin-bottom:0px; color:white; font-size:24px; font-weight:500">핏블리</p>
+                    <p style="margin-left:6px; margin-top:0px; margin-bottom:0px; color: white; font-size:16px; font-weight:100">국제트레이너/BJ치즈볼</p>
+                </div>
+                <!-- 유튜버 한줄 소개 -->
+                <pre style="margin-top:26px; margin-bottom:0px; color:white; font-weight:100; font-size:12px;">“운동독학, 누구나 쉽고 전문적으로”
+40여개국 세계여행&전문 자격증으로 탄생한 핏블리</pre>
+                <!-- 구독자수, 하트수 -->
+                <div style="display:flex; margin-top: 26px; align-items: center; justify-content: center;">
+                    <div style="display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_사람.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">132K</p>
+                    </div>
+                    <div style="margin-left: 18px; display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_하얀색하트.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">34K</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 유튜버3 -->
+            <div class="youtuber" style="cursor: pointer; margin-left:40px;" onclick="location.href='http://localhost:5500/two.html';">
+                <img style="margin-top:32px;  width:200px; height:200px; border-radius: 100%;" src="icons/운동유튜버_힙으뜸.jpg"/>
+                <!-- 유튜버 이름, 해쉬태크 -->
+                <div style="margin-top: 8px; display:flex; align-items:center; justify-content: center;">
+                    <p style="margin-top:0px; margin-bottom:0px; color:white; font-size:24px; font-weight:500">힙으뜸</p>
+                    <p style="margin-left:6px; margin-top:0px; margin-bottom:0px; color: white; font-size:16px; font-weight:100">피트니스/필라테스</p>
+                </div>
+                <!-- 유튜버 한줄 소개 -->
+                <pre style="margin-top:26px; margin-bottom:0px; color:white; font-weight:100; font-size:12px;">🥇국내 1위 여성 운동 크리에이터
+🥇국내 최초 100만 여성 운동 크리에이터</pre>
+                <!-- 구독자수, 하트수 -->
+                <div style="display:flex; margin-top: 26px; align-items: center; justify-content: center;">
+                    <div style="display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_사람.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">152K</p>
+                    </div>
+                    <div style="margin-left: 18px; display:flex; align-items: center;">
+                        <img style="width:14px; height:12px;" src="icons/유튜버_하얀색하트.png"/>
+                        <p style="margin-left: 6px; margin-top:0px; margin-bottom:0px; color:white; font-weight: 600; font-size: 14px;">45K</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 화살표 -->
+            <div style="width:16%; text-align: center;">
+                <img style="width:30px; height:48px;" src="icons/유튜버_화살표.png"/>
+            </div>
+            
+        </div>
+
+    </div>
     
 </body>
 </html>

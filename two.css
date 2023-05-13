@@ -21,9 +21,6 @@
     font-family: 'Noto Sans KR';
 }
 
-.body{
-    background: linear-gradient(to bottom, #BFCDFF, #f8f9fc);
-}
 
 #category p{
     font-size: 28px;
@@ -89,7 +86,7 @@
     margin-top: 34px; 
     margin-left: 10px; 
     
-   font-weight: 100;
+    font-weight: 100;
     font-size: 18px;
 }
 .youtuber_write{
