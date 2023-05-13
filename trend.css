@@ -1,0 +1,139 @@
+/* trending-section */
+.trending-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+
+  padding: 140px 120px;
+}
+
+.trending-section__category {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 25px;
+
+  color: #000000;
+}
+
+.trending-section__title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 25px;
+
+  color: #000000;
+}
+
+.trending-section__first {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+
+  width: 100%;
+}
+
+.trending-section__second {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+
+  width: 100%;
+}
+
+.trending-section__card {
+  width: 370px;
+  max-width: 370px;
+
+  border-radius: 16px;
+}
+
+.trending-section__card-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding: 20px 40px 40px;
+  background-color: #FFFFFF;
+  border-radius: 0 0 16px 16px;
+}
+
+.trending-section__card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.trending-section__card-top-title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 150%;
+
+  text-align: center;
+
+  color: #0D0D2B;
+}
+
+.trending-section__card-top-category {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 150%;
+
+  text-align: center;
+
+  color: #BDBDBD;
+}
+
+.trending-section__card-sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.trending-section__card-sub-text {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 150%;
+
+  text-align: center;
+
+  color: #C1C1C1;
+}
+
+.trending-section__card-main-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #828282;
+}
+
+.trending-section__card-tag-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.trending-section__card-tag {
+  background: #B7B7B7;
+  border-radius: 32px;
+  font-weight: 500;
+  font-size: 1.125rem;
+  white-space: nowrap;
+
+  text-align: center;
+  color: #FFFFFF;
+
+  padding: 12px 15px;
+}
