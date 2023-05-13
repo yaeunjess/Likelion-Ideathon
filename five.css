@@ -1,0 +1,28 @@
+#category{
+    display: flex;
+    margin-left: 64px;
+    margin-bottom: 48px;
+}
+
+#category p{
+    font-size: 28px;
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+
+#category img{
+    margin-right: 70px;
+}
+
+#login{
+    display: flex;
+    margin-left: auto;
+    margin-top:64px; 
+    margin-right: 92px;
+
+    float:right; 
+}
+
+.body{
+    background: linear-gradient(to bottom, #BFCDFF, #f8f9fc);
+}
