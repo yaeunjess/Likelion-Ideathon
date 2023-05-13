@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="four.css">
+</head>
+<body style="background-color: #BFCDFF; display: flex;">
+
+    <!-- 카테고리 div -->
+    <div style="background-color: white; width: 420px; height: 100%; position: fixed; top:0; left: 0; bottom: 0; float:left;">
+
+        <div id="category" style="margin-top:68px; margin-bottom:114px; margin-left: 64px;">
+            <img class="category_padding" src="icons/임시 로고.png" width="42" height="42" style="margin-right: 20px;">
+            <p id="logo" style="font-size: 40px; margin-top: 0; margin-bottom: 0;">YOUPICK</p>
+        </div>
+        
+        <div id="category">
+            <img src="icons/쿠킹.png" width="42" height="42">
+            <p>쿠킹</p>
+        </div>
+        <div id="category">
+            <img src="icons/스포츠.png" width="42" height="42" style="margin-right: 70px;">
+            <p style="font-size: 28px; margin-top: 0; margin-bottom: 0;">스포츠</p>
+        </div>
+        <div id="category">
+            <img src="icons/독서.png" width="42" height="42">
+            <p>여행</p>
+        </div>
+        <div id="category">
+            <img src="icons/음악.png" width="42" height="42">
+            <p>음악</p>
+        </div>
+        <div id="category">
+            <img src="icons/춤.png" width="42" height="42">
+            <p>뷰티</p>
+        </div>
+        <div id="category">
+            <img src="icons/애니.png" width="42" height="42">
+            <p>유머</p>
+        </div>
+        <div id="category">
+            <img src="icons/기타.png" width="42" height="42">
+            <p>기타</p>
+        </div>
+    </div>
+
+    <div style="width: 100%">
+        <!-- topbar div  -->
+        <div id="topbar" style="margin-top:64px; float:right; margin-right: 92px;">
+            <img src="icons/검색.png" width="14" height="14" style="margin-top:10px; margin-right: 25px;"/>
+            <p style="width:74px; height:25px; font-size: 20px; margin-top:0; margin-bottom:0; margin-right: 29px;">로그아웃</p>
+            <img src="icons/일자로생긴선.png" width="2" height="33" />
+            <p style="width:56px; height:25px; font-size: 20px; margin-top:0; margin-bottom:0; margin-left: 25px; margin-right:16px;">제시님</p>
+            <img src="icons/저장.png"  width="11" height="16" style="margin-top:10px;"/>
+        </div>
+
+        <!-- by_category -->
+        <p id="by_category_e" style="margin-bottom: 0px; margin-top: 184px; margin-left:522px; font-size:24px; font-family: 'Poppins';">BY CATEGORY</p>
+        <p id="by_category_k" style="margin-bottom: 0px; margin-top: 25px; margin-left:522px; font-size:32px; font-family: 'Noto Sans';">카테고리별 유튜버</p>
+
+        <!-- 카테고리 -->
+        <div style="display: flex;"> 
+            <div style="background-color: #ffffff; width:113px; height: 48px; border-radius: 16px; margin-left: 520px; margin-top:63px;">
+                <p id="categories" style="color: rgb(0, 0, 0); margin-bottom: 15.5px; margin-top: 15.5px; margin-left:17.5px;" >스포츠</p>
+            </div>
+            <img src="icons/Vector.png" width="10.8" height="22" style="margin-left: 16px; margin-top:77px;"/>
+            <div style="background-color: #ffffff; width:113px; height: 48px; border-radius: 16px; margin-left: 16px; margin-top:63px;">
+                <p id="categories" style="color: rgb(0, 0, 0); margin-bottom: 15.5px; margin-top: 15.5px; margin-left:17.5px;" >축구</p>
+            </div>
+            <div>
+                <img src="icons/하트.png" width="22" height="18" style="margin-left: 16px; margin-top:72px;"/>
+                <p id='likes' style="margin-top: 2px; margin-bottom: 0px; margin-left: 18px;">8m</p>
+            </div>
+            <div id = "youtuber_mini">
+                <img src="icons/인기순.png" width="20" height="20" style="margin-top:2.5px;"/>
+            </div>
+            <div>
+                <p id="like_cate">인기순</p>
+            </div>
+        </div>
+
+        <!-- 해쉬태그 div -->
+        <div style="display: flex;"> 
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 520px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            </div>
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            </div>
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            </div>
+        </div>
+
+        <!-- 유튜버 설명 상자 div -->
+        <div id="youtuberbox">
+
+            
+            <!-- 유튜버 사진, 해쉬태그, 하트 -->
+            <div style="margin-left: 20px; width:20%; justify-content: center;">
+                    <div id="youtuber">
+                        <div>
+                            <img src="icons/인기순.png" style="width:94px; height:94px; margin-top: 4px; "/>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <p id="youtuber_name">유튜버</p>
+                        <p id="youtuber_hashtag">먹방/스트리밍</p>
+                        <img style="width: 30px; height:26px; margin-top: 34px; margin-left: 14px;" src="icons/게시글_하트.png"/>
+                    </div>
+            </div>
+
+            <div style="width:80%">
+
+                <!-- 구독자수 누적조회수 최고조회수, 팬이된지, 먹방종합순위 -->
+                <div style="display:flex; text-align: center; margin-top: 70px; margin-left: 80px;">
+                    <!-- 구독자수 -->
+                    <div style="align-items: center; justify-content:center; margin-right: 62px;">
+                        <p class="youtuber_write">구독자 수</p>
+                        <p class="youtuber_write2">800K</p>
+                    </div>
+                    <!-- 누적조회수 -->
+                    <div style="align-items: center; justify-content:center; margin-right: 58px;">
+                        <p class="youtuber_write">누적 조회수</p>
+                        <p class="youtuber_write2">8m</p>
+                    </div>
+                    <!-- 최고조회수 -->
+                    <div style="align-items: center; justify-content:center;">
+                        <p class="youtuber_write">최고 조회수</p>
+                        <p class="youtuber_write2">2m</p>
+                    </div>
+                    <!-- 평균 평점 -->
+                    <div style="display:flex; float:right; margin-left:373px;">
+                        <div style="align-items: center; justify-content:center;">
+                            <p class="youtuber_write3" >평균 평점</p>
+                            <p class="youtuber_write4">4.5</p>
+                        </div>
+                    </div>
+            
+                </div>
+
+                <!-- 유튜버 한마디 -->
+                <div>
+                    <pre style="margin-top: 18px; margin-left: 90px; font-weight: 300; font-size: 24px; color:white;">안녕하세요! 먹방 유튜버 뫄뫄에요~
+매주 수요일 8시마다 새롭고 맛있는 메뉴로 찾아오니까 기대해주세요~</pre>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <!-- 해쉬태그 div -->
+        <div style="display: flex;"> 
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 520px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            </div>
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            </div>
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            </div>
+        </div>
+
+        <!-- 유튜버 설명 상자 div -->
+        <div id="youtuberbox">
+
+            
+            <!-- 유튜버 사진, 해쉬태그, 하트 -->
+            <div style="margin-left: 20px; width:20%; justify-content: center;">
+                    <div id="youtuber">
+                        <div>
+                            <img src="icons/인기순.png" style="width:94px; height:94px; margin-top: 4px; "/>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <p id="youtuber_name">유튜버</p>
+                        <p id="youtuber_hashtag">먹방/스트리밍</p>
+                        <img style="width: 30px; height:26px; margin-top: 34px; margin-left: 14px;" src="icons/게시글_하트.png"/>
+                    </div>
+            </div>
+
+            <div style="width:80%">
+
+                <!-- 구독자수 누적조회수 최고조회수, 팬이된지, 먹방종합순위 -->
+                <div style="display:flex; text-align: center; margin-top: 70px; margin-left: 80px;">
+                    <!-- 구독자수 -->
+                    <div style="align-items: center; justify-content:center; margin-right: 62px;">
+                        <p class="youtuber_write">구독자 수</p>
+                        <p class="youtuber_write2">800K</p>
+                    </div>
+                    <!-- 누적조회수 -->
+                    <div style="align-items: center; justify-content:center; margin-right: 58px;">
+                        <p class="youtuber_write">누적 조회수</p>
+                        <p class="youtuber_write2">8m</p>
+                    </div>
+                    <!-- 최고조회수 -->
+                    <div style="align-items: center; justify-content:center;">
+                        <p class="youtuber_write">최고 조회수</p>
+                        <p class="youtuber_write2">2m</p>
+                    </div>
+                    <!-- 평균 평점 -->
+                    <div style="display:flex; float:right; margin-left:373px;">
+                        <div style="align-items: center; justify-content:center;">
+                            <p class="youtuber_write3" >평균 평점</p>
+                            <p class="youtuber_write4">4.5</p>
+                        </div>
+                    </div>
+            
+                </div>
+
+                <!-- 유튜버 한마디 -->
+                <div>
+                    <pre style="margin-top: 18px; margin-left: 90px; font-weight: 300; font-size: 24px; color:white;">안녕하세요! 먹방 유튜버 뫄뫄에요~
+매주 수요일 8시마다 새롭고 맛있는 메뉴로 찾아오니까 기대해주세요~</pre>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <!-- 해쉬태그 div -->
+        <div style="display: flex;"> 
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 520px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            </div>
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            </div>
+            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            </div>
+        </div>
+
+        <!-- 유튜버 설명 상자 div -->
+        <div id="youtuberbox">
+
+            
+            <!-- 유튜버 사진, 해쉬태그, 하트 -->
+            <div style="margin-left: 20px; width:20%; justify-content: center;">
+                    <div id="youtuber">
+                        <div>
+                            <img src="icons/인기순.png" style="width:94px; height:94px; margin-top: 4px; "/>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <p id="youtuber_name">유튜버</p>
+                        <p id="youtuber_hashtag">먹방/스트리밍</p>
+                        <img style="width: 30px; height:26px; margin-top: 34px; margin-left: 14px;" src="icons/게시글_하트.png"/>
+                    </div>
+            </div>
+
+            <div style="width:80%">
+
+                <!-- 구독자수 누적조회수 최고조회수, 팬이된지, 먹방종합순위 -->
+                <div style="display:flex; text-align: center; margin-top: 70px; margin-left: 80px;">
+                    <!-- 구독자수 -->
+                    <div style="align-items: center; justify-content:center; margin-right: 62px;">
+                        <p class="youtuber_write">구독자 수</p>
+                        <p class="youtuber_write2">800K</p>
+                    </div>
+                    <!-- 누적조회수 -->
+                    <div style="align-items: center; justify-content:center; margin-right: 58px;">
+                        <p class="youtuber_write">누적 조회수</p>
+                        <p class="youtuber_write2">8m</p>
+                    </div>
+                    <!-- 최고조회수 -->
+                    <div style="align-items: center; justify-content:center;">
+                        <p class="youtuber_write">최고 조회수</p>
+                        <p class="youtuber_write2">2m</p>
+                    </div>
+                    <!-- 평균 평점 -->
+                    <div style="display:flex; float:right; margin-left:373px;">
+                        <div style="align-items: center; justify-content:center;">
+                            <p class="youtuber_write3" >평균 평점</p>
+                            <p class="youtuber_write4">4.5</p>
+                        </div>
+                    </div>
+            
+                </div>
+
+                <!-- 유튜버 한마디 -->
+                <div>
+                    <pre style="margin-top: 18px; margin-left: 90px; font-weight: 300; font-size: 24px; color:white;">안녕하세요! 먹방 유튜버 뫄뫄에요~
+매주 수요일 8시마다 새롭고 맛있는 메뉴로 찾아오니까 기대해주세요~</pre>
+                </div>
+            
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+    
+</body>
+</html>

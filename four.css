@@ -3,9 +3,6 @@
 .notosanskr * { 
  font-family: 'Noto Sans KR', sans-serif;
 }
-.notosans{
-    font-family: 'Noto Sans KR';
-}
 
 @font-face {
     font-family: 'SBAggroB';
@@ -13,6 +10,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+.body{
+    background: linear-gradient(to bottom, #BFCDFF, #f8f9fc);
+}
+
 .poppins{
     font-family: SBAggroB;
 }
@@ -21,18 +23,16 @@
     font-family: 'Noto Sans KR';
 }
 
-.body{
-    background: linear-gradient(to bottom, #BFCDFF, #f8f9fc);
-}
-
 #category p{
     font-size: 28px;
     margin-top: 0; 
     margin-bottom: 0;
 }
+
 #category img{
     margin-right: 70px;
 }
+
 #category{
     display: flex;
     margin-left: 64px;
@@ -43,13 +43,61 @@
     font-family: SBAggroB;
 }
 
-#login{
+#topbar{
     display: flex;
     margin-left: auto;
-    margin-top:64px; 
-    margin-right: 92px;
+}
 
-    float:right; 
+#by_class_k{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 25px;
+}
+
+#categories{
+    width: 78px;
+    height: 13px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 46.5%;
+    /* identical to box height, or 13px */
+
+    text-align: center;
+}
+
+#likes{
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#youtuber_mini{
+    align-items: center; 
+    justify-content: center;
+    display: flex; 
+
+    background-color: white; 
+    width:40px;
+    height:40px; 
+    border-radius: 100%;
+    margin-top: 68px; 
+    margin-left:892px
+}
+
+#like_cate{
+    margin-left: 9px;
+    margin-top: 70px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
 }
 
 #youtuberbox{
@@ -111,9 +159,12 @@
 }
 .youtuber_write3{
     color: white;
-    font-weight: 300;
-    font-size: 20px;
 
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 78px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -133,8 +184,30 @@
     font-weight: 700;
     font-size: 64px;
 
+    margin-right: 60px;
     margin-top: 12px;
     margin-bottom: 0px;
+}
+
+#score{
+    width: 79px;
+    height: 30px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#score_num{
+    width: 123px;
+    height: 114px;
+
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 76px;
 }
 
 #announcement{
@@ -218,41 +291,3 @@
     background: #000000;
     border-radius: 16px;
 }
-
-
-#story{
-    align-items: center; 
-    justify-content: center;
-    display: flex; 
-
-    background-color: white; 
-    width:60px;
-    height:60px; 
-    border-radius: 100%;
-    margin-top: 30px; 
-    margin-left:50px
-}
-#storyhide{
-    align-items: center; 
-    justify-content: center;
-    display: flex; 
-
-    width:60px;
-    height:60px; 
-    margin-top: 30px; 
-    margin-left:50px
-}
-
-#more{
-    text-align: center; 
-    justify-content: center;
-    background-color: white; 
-    border-radius: 16px; 
-
-    position: absolute;
-    left:57%;
-    width:90px; 
-    height:48px;
-}
-
-
