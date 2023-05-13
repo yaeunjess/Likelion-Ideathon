@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>four.html</title>
     <link rel="stylesheet" href="four.css">
 </head>
-<body style="background-color: #BFCDFF; display: flex;">
+<body style="background: linear-gradient(to bottom,  #BFCDFF, #e6ecfa);  display: flex;">
 
     <!-- 카테고리 div -->
     <div style="background-color: white; width: 420px; height: 100%; position: fixed; top:0; left: 0; bottom: 0; float:left;">
@@ -57,41 +57,47 @@
             <img src="icons/저장.png"  width="11" height="16" style="margin-top:10px;"/>
         </div>
 
-        <!-- by_category -->
-        <p id="by_category_e" style="margin-bottom: 0px; margin-top: 184px; margin-left:522px; font-size:24px; font-family: 'Poppins';">BY CATEGORY</p>
-        <p id="by_category_k" style="margin-bottom: 0px; margin-top: 25px; margin-left:522px; font-size:32px; font-family: 'Noto Sans';">카테고리별 유튜버</p>
+        <!-- liked youtubers -->
+        <p class="poppins" style="margin-bottom: 16px; margin-top: 184px; margin-left:524px; font-size:24px;">BY CATEGORY</p>
+        
+        <!-- 내가 관심있는 유튜버, 리스트 수정하기 -->
+        <div style="display: flex; align-items:center;">
+            <!-- 내가 관심있는 유튜버 -->
+            <p style="margin-top: 0px; margin-bottom:0px; margin-left:524px; font-size:40px;">카테고리별 유튜버</p>
+        </div>
 
         <!-- 카테고리 -->
         <div style="display: flex;"> 
-            <div style="background-color: #ffffff; width:113px; height: 48px; border-radius: 16px; margin-left: 520px; margin-top:63px;">
-                <p id="categories" style="color: rgb(0, 0, 0); margin-bottom: 15.5px; margin-top: 15.5px; margin-left:17.5px;" >스포츠</p>
+            <div style="background-color: #ffffff; width:113px; height: 48px; border-radius: 16px; margin-left: 520px; margin-top:80px;">
+                <p id="categories" style="color: rgb(0, 0, 0); margin-bottom: 0px; margin-top: 15.5px; margin-left:17.5px;" >스포츠</p>
             </div>
-            <img src="icons/Vector.png" width="10.8" height="22" style="margin-left: 16px; margin-top:77px;"/>
-            <div style="background-color: #ffffff; width:113px; height: 48px; border-radius: 16px; margin-left: 16px; margin-top:63px;">
-                <p id="categories" style="color: rgb(0, 0, 0); margin-bottom: 15.5px; margin-top: 15.5px; margin-left:17.5px;" >축구</p>
+            <img src="icons/Vector.png" width="10.8" height="22" style="margin-left: 16px; margin-top:94px;"/>
+            <div style="background-color: #ffffff; width:113px; height: 48px; border-radius: 16px; margin-left: 16px; margin-top:80px;">
+                <p id="categories" style="color: rgb(0, 0, 0); margin-bottom: 0px; margin-top: 15.5px; margin-left:17.5px;" >축구</p>
             </div>
             <div>
-                <img src="icons/하트.png" width="22" height="18" style="margin-left: 16px; margin-top:72px;"/>
+                <img src="icons/하트.png" width="22" height="18" style="margin-left: 16px; margin-top:88px;"/>
                 <p id='likes' style="margin-top: 2px; margin-bottom: 0px; margin-left: 18px;">8m</p>
             </div>
-            <div id = "youtuber_mini">
+
+            <div id = "youtuber_mini" style="margin-left:auto; float: right; ">
                 <img src="icons/인기순.png" width="20" height="20" style="margin-top:2.5px;"/>
             </div>
             <div>
-                <p id="like_cate">인기순</p>
+                <p id="like_cate" style="margin-right:104px;">인기순</p>
             </div>
         </div>
 
         <!-- 해쉬태그 div -->
-        <div style="display: flex;"> 
+        <div style="display: flex; margin-top:0px;"> 
             <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 520px; margin-top:34px;">
-                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:18px;" >#축구</p>
             </div>
             <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
-                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:20px;" >#레슨</p>
             </div>
-            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
-                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            <div style="background-color: #686868;  height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:8px; margin-right:8px;" >#선수출신</p>
             </div>
         </div>
 
@@ -101,12 +107,12 @@
             
             <!-- 유튜버 사진, 해쉬태그, 하트 -->
             <div style="margin-left: 20px; width:25%; justify-content: center;">
-                    <div id="youtuber">
+                    <div id="youtuber" style="margin-left:28%">
                         <div>
                             <img src="icons/junghwan.jpg"style="margin-top:0px;  width:200px; height:200px; border-radius: 100%;">
                         </div>
                     </div>
-                    <div style="display: flex;">
+                    <div style="display: flex; margin-left:20%">
                         <p id="youtuber_name">안정환</p>
                         <p id="youtuber_hashtag">스포츠/원포인트레슨</p>
                         <img style="width: 30px; height:26px; margin-top: 34px; margin-left: 14px;" src="icons/게시글_하트.png"/>
@@ -133,7 +139,7 @@
                         <p class="youtuber_write2">2m</p>
                     </div>
                     <!-- 평균 평점 -->
-                    <div style="display:flex; float:right; margin-left:373px;">
+                    <div style="display:flex; float:right; margin-left: auto; margin-right:56px;">
                         <div style="align-items: center; justify-content:center;">
                             <p class="youtuber_write3" >평균 평점</p>
                             <p class="youtuber_write4">4.3</p>
@@ -151,13 +157,14 @@
 
         </div>
 
+
         <!-- 해쉬태그 div -->
         <div style="display: flex;"> 
             <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 520px; margin-top:34px;">
                 <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#축잘알</p>
             </div>
-            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
-                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#국가대표</p>
+            <div style="background-color: #686868; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px; margin-right:12px;" >#국가대표</p>
             </div>
             <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
                 <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#월드컵</p>
@@ -170,12 +177,12 @@
             
             <!-- 유튜버 사진, 해쉬태그, 하트 -->
             <div style="margin-left: 20px; width:25%; justify-content: center;">
-                    <div id="youtuber">
+                    <div id="youtuber"  style="margin-left:28%">
                         <div>
                             <img src="icons/chunsoo.jpg" style="margin-top:0px;  width:200px; height:200px; border-radius: 100%;"/>
                         </div>
                     </div>
-                    <div style="display: flex;">
+                    <div style="display: flex; margin-left:20%">
                         <p id="youtuber_name">리춘수</p>
                         <p id="youtuber_hashtag">해설/스트리밍</p>
                         <img style="width: 30px; height:26px; margin-top: 34px; margin-left: 14px;" src="icons/게시글_하트.png"/>
@@ -202,7 +209,7 @@
                         <p class="youtuber_write2">6M</p>
                     </div>
                     <!-- 평균 평점 -->
-                    <div style="display:flex; float:right; margin-left:373px;">
+                    <div style="display:flex; float:right; margin-left: auto; margin-right:56px;">
                         <div style="align-items: center; justify-content:center;">
                             <p class="youtuber_write3" >평균 평점</p>
                             <p class="youtuber_write4">4.4</p>
@@ -220,32 +227,33 @@
 
         </div>
 
+
         <!-- 해쉬태그 div -->
         <div style="display: flex;"> 
-            <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 520px; margin-top:34px;">
-                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+            <div style="background-color: #686868; height: 36px; border-radius: 32px; margin-left: 520px; margin-top:34px;">
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px; margin-right:12px;" >#국가대표</p>
             </div>
             <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
-                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:20px;" >#예능</p>
             </div>
             <div style="background-color: #686868; width:80px; height: 36px; border-radius: 32px; margin-left: 10px; margin-top:34px;">
-                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#헬린이</p>
+                <p style="color: white; margin-bottom: 0px; margin-top: 4px; margin-left:12px;" >#스포츠</p>
             </div>
         </div>
 
         <!-- 유튜버 설명 상자 div -->
-        <div id="youtuberbox">
+        <div id="youtuberbox" style="margin-bottom:270px;">
 
             
             <!-- 유튜버 사진, 해쉬태그, 하트 -->
             <div style="margin-left: 20px; width:25%; justify-content: center;">
-                    <div id="youtuber">
+                    <div id="youtuber"  style="margin-left:28%">
                         <div>
                             <img src="icons/dongkuk.jpg" style="margin-top:0px;  width:200px; height:200px; border-radius: 100%;"/>
                         </div>
                     </div>
-                    <div style="display: flex;">
-                        <p id="youtuber_name">이동국</p>
+                    <div style="display: flex; margin-left:20%">
+                        <p id="youtuber_name">이동방송국</p>
                         <p id="youtuber_hashtag">축구/국가대표</p>
                         <img style="width: 30px; height:26px; margin-top: 34px; margin-left: 14px;" src="icons/게시글_하트.png"/>
                     </div>
@@ -271,7 +279,7 @@
                         <p class="youtuber_write2">2m</p>
                     </div>
                     <!-- 평균 평점 -->
-                    <div style="display:flex; float:right; margin-left:373px;">
+                    <div style="display:flex; float:right; margin-left: auto; margin-right:56px;">
                         <div style="align-items: center; justify-content:center;">
                             <p class="youtuber_write3" >평균 평점</p>
                             <p class="youtuber_write4">4.2</p>
