@@ -56,7 +56,10 @@ body {
   align-items: flex-start;
   gap: 50px;
 
-  margin-top: 90px;
+
+  font-weight: 500;
+  font-size: 28px;
+  margin-top: 114px;
 }
 
 .category {
@@ -65,9 +68,15 @@ body {
   justify-content: flex-start;
   align-items: center;
 
-  gap: 70px;
+  gap: 66px;
 
-  font-size: 1.75rem;
+  /* font-size: 1.75rem; */
+}
+
+.category p{
+  font-size: 28px;
+  margin-top: 0; 
+  margin-bottom: 0;
 }
 
 /* main */
