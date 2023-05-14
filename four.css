@@ -1,0 +1,293 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.body{
+    background: linear-gradient(to bottom, #BFCDFF, #f8f9fc);
+}
+
+.poppins{
+    font-family: SBAggroB;
+}
+
+*{
+    font-family: 'Noto Sans KR';
+}
+
+#category p{
+    font-size: 28px;
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+
+#category img{
+    margin-right: 70px;
+}
+
+#category{
+    display: flex;
+    margin-left: 64px;
+    margin-bottom: 48px;
+}
+
+#logo{
+    font-family: SBAggroB;
+}
+
+#topbar{
+    display: flex;
+    margin-left: auto;
+}
+
+#by_class_k{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 25px;
+}
+
+#categories{
+    width: 78px;
+    height: 13px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 46.5%;
+    /* identical to box height, or 13px */
+
+    text-align: center;
+}
+
+#likes{
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#youtuber_mini{
+    align-items: center; 
+    justify-content: center;
+    display: flex; 
+
+    background-color: white; 
+    width:40px;
+    height:40px; 
+    border-radius: 100%;
+    margin-top: 68px; 
+    margin-left:892px
+}
+
+#like_cate{
+    margin-left: 9px;
+    margin-top: 70px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#youtuberbox{
+    background-color: #484848; 
+    height: 368px; 
+    border-radius: 16px;
+    display:flex;
+
+    margin-top: 16px; 
+    margin-left: 520px; 
+    margin-right: 100px;
+}
+#youtuber{
+    align-items: center; 
+    justify-content: center;
+    display: flex; 
+
+    background-color: white; 
+    width:188px;
+    height:188px; 
+    border-radius: 100%;
+    margin-top: 56px; 
+    margin-left:60px
+}
+#youtuber_name{
+    color: white; 
+    margin-top: 22px; 
+    margin-left: 56px; 
+    margin-right: 0px;
+
+    font-weight: 700; 
+    font-size: 32px; 
+    width:100px;
+}
+#youtuber_hashtag{
+    color: white; 
+    margin-top: 34px; 
+    margin-left: 10px; 
+    
+   font-weight: 100;
+    font-size: 18px;
+}
+.youtuber_write{
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.youtuber_write2{
+    color:white;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: 'SBAggroB';
+
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.youtuber_write3{
+    color: white;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 78px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#youtuber_writebar{
+    color: white;
+    font-family: 'SBAggroB';
+    font-weight: 100;
+    font-size: 64px;
+
+    margin-top: 44px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+}
+.youtuber_write4{
+    color: white;
+    font-family: 'SBAggroB';
+    font-weight: 700;
+    font-size: 64px;
+
+    margin-right: 60px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+#score{
+    width: 79px;
+    height: 30px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#score_num{
+    width: 123px;
+    height: 114px;
+
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 76px;
+}
+
+#announcement{
+    background-color: white; 
+    height:235px;
+    border-radius: 16px;
+
+    margin-top: 64px; 
+    margin-left: 520px; 
+    margin-right: 100px;  
+
+    text-align: center;
+}
+
+#search{
+    position: relative; 
+    z-index:2; 
+    
+    text-align:center; 
+    
+    background-color:#6c6c6c; 
+    width:150px; 
+    height:60px; 
+    border-radius: 32px; 
+    margin-left: 522px; 
+    margin-top:46px;
+}
+#search p{
+    font-size: 18px; 
+    color: white; 
+    margin-bottom: 0px; 
+    margin-top:14px; 
+    margin-left:0px;
+}
+#searchtwo{
+    display: flex; 
+
+    position: relative; 
+    z-index:1; 
+
+    background-color: #FFFFFF; 
+    width: 50%; 
+    height: 60px; 
+    border-radius: 32px; 
+    margin-left: -130px; 
+    margin-top:46px;
+}
+#searchtwo pre{
+    font-weight:700; 
+    font-size:18px; 
+    color: rgba(58, 58, 58, 0.5);
+    margin-bottom: 0px; 
+    margin-top: 16px; 
+    margin-left:26px;
+}
+
+#popularity{
+    align-items: center; 
+    justify-content: center;
+    display: flex; 
+
+    background-color: white; 
+    width:40px;
+    height:40px; 
+    border-radius: 100%;
+    margin-top: 55px; 
+    margin-left:50px
+}
+
+#storywrite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float:right;
+    margin-left: auto;
+    
+    width: 150px;
+    height: 48px;
+    margin-top: 50px;
+    margin-right: 100px;
+    background: #000000;
+    border-radius: 16px;
+}
