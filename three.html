@@ -3,24 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>three.html</title>
+    <meta name="description" content="YOUPICK에서 유튜버를 추천받고 커뮤니티에서 다른 구독자들과 대화해보세요~">
+    <meta name="keywords" content="YOUPICK, 유튜버, 커뮤니티, 추천">
+    <meta
+	    name="og:site_name"
+	    content="YOUPICK"/>
+    <meta
+	    name="og:title"
+	    content="YOUPICK"/>
+    <meta
+	    name="og:description"
+	    content="YOUPICK에서 유튜버를 추천받고 커뮤니티에서 다른 구독자들과 대화해보세요~"/>
+    <meta
+	    name="og:type"
+	    content="website"/>
+    <meta
+	    name="og:url"
+	    content="https://youpick.swygbro.com"/>
+    <meta
+	    name="og:image"
+	    href="./icons/youpick_logo.png"/>
+    <meta
+      name="twitter:title"
+      content="YOUPICK"/>
+    <link
+      rel="apple-touch-icon"
+      href="./icons/youpick_phonelogo.png"/>
+    <link
+      rel="shortcut icon"
+      href="./icons/youpick_phonelogo.png"/>
+    <title>YOUPICK</title>
     <link rel="stylesheet" href="three.css">
 </head>
 <body style="background: linear-gradient(to bottom,  #BFCDFF, #e6ecfa); display: flex; width: 100%;">
 
     <!-- 카테고리 div -->
-    <div style="background-color: white; width: 420px; height: 100%; position: fixed; top:0; left: 0; bottom: 0; float:left; cursor: pointer;" onclick="location.href='http://localhost:5500/1.html';">
+    <div style="background-color: white; width: 420px; height: 100%; position: fixed; top:0; left: 0; bottom: 0; float:left;">
 
-        <div id="category" style="margin-top:68px; margin-bottom:114px; margin-left: 64px;">
-            <img class="category_padding" src="icons/임시 로고.png" width="42" height="42" style="margin-right: 20px;">
+        <div id="category" style="margin-top:68px; margin-bottom:114px; margin-left: 64px;" onclick="location.href='index.html';">
+            <img class="category_padding" src="icons/youpick_phonelogo.png" width="42" height="42" style="margin-right: 20px;">
             <p id="logo" style="font-size: 40px; margin-top: 0; margin-bottom: 0;">YOUPICK</p>
         </div>
         <div id="category">
             <img src="icons/쿠킹.png" width="42" height="42">
             <p>쿠킹</p>
         </div>
-        <div id="category">
+        <div id="category"style="cursor:pointer"  onclick="location.href='four.html';">
             <img src="icons/스포츠.png" width="42" height="42" style="margin-right: 70px;">
             <p style="font-size: 28px; margin-top: 0; margin-bottom: 0;">스포츠</p>
         </div>
@@ -53,7 +81,7 @@
             <img src="icons/검색.png" width="14" height="14" style="margin-top:10px; margin-right: 25px;"/>
             <p style="width:74px; height:25px; font-size: 20px; margin-top:0; margin-bottom:0; margin-right: 29px;">로그아웃</p>
             <img src="icons/일자로생긴선.png" width="2" height="33" />
-            <p style="width:56px; height:25px; font-size: 20px; margin-top:0; margin-bottom:0; margin-left: 25px; margin-right:16px;">제시님</p>
+            <span style="width:56px; height:25px; font-size: 20px; margin-top:0; margin-bottom:0; margin-left: 25px; margin-right:16px; cursor:pointer;" onclick="location.href='three.html';">제시님</span>
             <img src="icons/저장.png"  width="11" height="16" style="margin-top:10px;"/>
         </div>
 
@@ -290,7 +318,7 @@ Be the best version of you! 💪🏽😉</pre>
                 </div>
             </div>
             <!-- 유튜버3 -->
-            <div class="youtuber" style="cursor: pointer; margin-left:40px;" onclick="location.href='http://localhost:5500/five.html';">
+            <div class="youtuber" style="cursor: pointer; margin-left:40px;" onclick="location.href='five.html';">
                 <img style="margin-top:32px;  width:200px; height:200px; border-radius: 100%;" src="icons/운동유튜버_힙으뜸.jpg"/>
                 <!-- 유튜버 이름, 해쉬태크 -->
                 <div style="margin-top: 8px; display:flex; align-items:center; justify-content: center;">
@@ -322,5 +350,6 @@ Be the best version of you! 💪🏽😉</pre>
 
     </div>
     
+    <script defer src="https://cdn.swygbro.com/public/widget/swyg-widget.js"></script>
 </body>
 </html>
